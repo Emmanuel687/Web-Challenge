@@ -23,8 +23,18 @@
 }
 @media (max-width: 575px) {
 	.css-wb57ya-MuiFormControl-root-MuiTextField-root {
-		min-width: 200px !important;
+		min-width: 192px !important;
 	}
+}
+
+.css-1j0qgw8-MuiAutocomplete-root {
+	background-color: white !important;
+	border: none !important;
+}
+
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+	color: #f76434 !important;
+	font-family: mulish !important;
 }
 // Search BTN Input Styles End
 
@@ -50,33 +60,3 @@ video {
 	font-family: mulish !important;
 }
 // Text Styles Start
-
-/* ReadingList.module.scss */
-.listContainer {
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	background-color: #f5f5f5;
-	overflow: hidden;
-}
-
-.listItem {
-	padding: 16px;
-	margin: 8px 0;
-	background-color: #fff;
-	border-bottom: 1px solid #e0e0e0;
-	&:last-child {
-		border-bottom: none;
-	}
-
-	&.hover:hover {
-		background-color: #e0e0e0;
-	}
-}
-
-.iconButton {
-	position: absolute;
-	right: 8px;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #ff0000; /* Red color for the delete icon */
-}

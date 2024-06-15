@@ -5,7 +5,10 @@ const Footer = () => {
 	const date = new Date().getFullYear();
 	return (
 		<Box>
-			<p class="text-center"> © {date} Ello. All rights reserved.</p>
+			<p class="text-center p-[90px]  text-[#335C6E]">
+				{" "}
+				© {date} Ello All rights reserved .
+			</p>
 		</Box>
 	);
 };

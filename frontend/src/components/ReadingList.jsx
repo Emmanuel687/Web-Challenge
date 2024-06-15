@@ -17,11 +17,22 @@ const ReadingList = ({ readingList, removeFromReadingList, handleToggle }) => {
 	return (
 		<>
 			{/* Return to Booklist Button Start */}
-			<Box display="flex" alignItems="center" mb={2}>
-				<Button startIcon={<ArrowBackIcon />} onClick={handleToggle}>
+			<div className="flex justify-between">
+				<Button
+					startIcon={<ArrowBackIcon />}
+					onClick={handleToggle}
+					style={{
+						fontFamily: "Mulish",
+						color: "#4AA088",
+						backgroundColor: "#ffff",
+					}}
+				>
 					Return to Booklist
 				</Button>
-			</Box>
+				<Typography sx={{ color: "#4AA088", fontFamily: "Mulish" }}>
+					{readingList.length > 0 && `${readingList.length} Books`}
+				</Typography>
+			</div>
 			{/* Return to Booklist Button End */}
 
 			{/* Reading List Start */}
@@ -65,8 +76,13 @@ const ReadingList = ({ readingList, removeFromReadingList, handleToggle }) => {
 					))}
 				</List>
 			) : (
-				<Typography variant="body1" align="center" className="no-books-added">
-					No Books Added
+				<Typography
+					variant="body1"
+					align="center"
+					sx={{ padding: "270px", fontFamily: "Mulish" }}
+					className="no-books-added"
+				>
+					No Books Added 😞
 				</Typography>
 			)}
 			{/* Reading List End */}

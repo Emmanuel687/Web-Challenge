@@ -34,6 +34,10 @@ const BookList = ({ selectedBook, addToReadingList, handleToggle }) => {
 				pauseOnHover: true,
 				draggable: true,
 				progress: undefined,
+				style: {
+					color: "#4AA088",
+					fontFamily: "Mulish",
+				},
 			});
 		} else {
 			toast.error("This book is already in your reading list!", {
@@ -44,6 +48,10 @@ const BookList = ({ selectedBook, addToReadingList, handleToggle }) => {
 				pauseOnHover: true,
 				draggable: true,
 				progress: undefined,
+				style: {
+					color: "#F76434",
+					fontFamily: "Mulish",
+				},
 			});
 		}
 	};
@@ -82,18 +90,20 @@ const BookList = ({ selectedBook, addToReadingList, handleToggle }) => {
 						{/* Book Details End */}
 
 						{/* Book BTN Add && View Student Books Start */}
-						<div className="mt-[10px]">
+						<div className="mt-4 flex space-x-4">
 							<button
-								className="ml-4 bg-[#27b8b8] hover:bg-[#53C2C2] pt-[5px] pb-[5px] pl-[16px] pr-[16px] text-[#ffff] font-[500] rounded-[10px]"
+								class="bg-[#49a088] hover:bg-[#3B4C52] text-white py-2 px-4 rounded-lg  transition duration-300"
+								style={{ fontFamily: "Mulish", fontWeight: 600, fontSize: 16 }}
 								onClick={() => handleAddToReadingList(book)}
 							>
 								Add 📖
 							</button>
 							<button
-								className="ml-4 bg-[#27b8b8] hover:bg-[#53C2C2] pt-[5px] pb-[5px] pl-[16px] pr-[16px] text-[#ffff] font-[500] rounded-[10px]"
+								class="bg-[#F76434] hover:bg-[#E65D29] text-white py-2 px-4 rounded-lg  transition duration-300"
+								style={{ fontFamily: "Mulish", fontWeight: 600 }}
 								onClick={() => handleToggle()}
 							>
-								View Student List 👨‍🎓
+								View Reading List 📚
 							</button>
 						</div>
 						{/* Book BTN Add && View Student Books End */}

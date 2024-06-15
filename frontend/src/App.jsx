@@ -57,30 +57,32 @@ function App() {
 		<>
 			<ToastContainer />
 			<ApolloProvider client={client}>
-				{/* <Header /> */}
 				<SearchBar onSelectBook={setSelectedBook} onSearch={setFilteredBooks} />
-				<Container>
-					<div>
-						<div className="mt-10">
-							{showCard ? (
-								<div className="mt-25">
-									<BookList
-										selectedBook={selectedBook}
-										addToReadingList={addToReadingList}
+				<div>
+					{/* Inline styling for background color */}
+					<Container>
+						<div>
+							<div className="mt-10">
+								{showCard ? (
+									<div>
+										<BookList
+											selectedBook={selectedBook}
+											addToReadingList={addToReadingList}
+											handleToggle={handleToggle}
+										/>
+									</div>
+								) : (
+									<ReadingList
+										readingList={readingList}
+										removeFromReadingList={removeFromReadingList}
 										handleToggle={handleToggle}
 									/>
-								</div>
-							) : (
-								<ReadingList
-									readingList={readingList}
-									removeFromReadingList={removeFromReadingList}
-									handleToggle={handleToggle}
-								/>
-							)}
+								)}
+							</div>
 						</div>
-					</div>
-					<Footer />
-				</Container>
+						<Footer />
+					</Container>
+				</div>
 			</ApolloProvider>
 		</>
 	);
