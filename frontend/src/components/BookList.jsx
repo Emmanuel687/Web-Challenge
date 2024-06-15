@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Grid, Card, CardContent, Typography, CardMedia } from "@mui/material";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import DeleteIcon from "@mui/icons-material/Delete";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import IconButton from "@mui/material/IconButton";
+import Avatar from "@mui/material/Avatar";
+import { toast } from "react-toastify";
 
 const GET_BOOKS = gql`
 	query GetBooks {
@@ -49,18 +52,6 @@ const BookList = ({ selectedBook, addToReadingList, handleToggle }) => {
 
 	return (
 		<Grid container spacing={2}>
-			<ToastContainer
-				position="top-right"
-				autoClose={5000}
-				hideProgressBar={false}
-				newestOnTop={false}
-				closeOnClick
-				rtl={false}
-				pauseOnFocusLoss
-				draggable
-				pauseOnHover
-			/>
-
 			{booksToShow.map((book) => (
 				<Grid item key={book.title} xs={12} sm={6} md={4} lg={4}>
 					<Card>
