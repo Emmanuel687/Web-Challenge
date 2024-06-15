@@ -12,10 +12,23 @@ import {
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ReadingList = ({ readingList, removeFromReadingList, handleToggle }) => {
 	return (
 		<>
+			<ToastContainer
+				position="top-right"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+			/>
 			{/* Return to Booklist Button Start */}
 			<Box display="flex" alignItems="center" mb={2}>
 				<Button startIcon={<ArrowBackIcon />} onClick={handleToggle}>

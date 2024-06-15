@@ -64,8 +64,6 @@ export default function SearchBar({ onSelectBook, onSearch }) {
 							<p className="text-[#5ACCCC] text-lg font-bold">ello 📚</p>
 						</div>
 						<div className="md:block w-1/2">
-							{" "}
-							{/* Set the width to 50% */}
 							<div className="flex items-center">
 								<Autocomplete
 									disablePortal
