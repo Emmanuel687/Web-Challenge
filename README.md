@@ -37,7 +37,7 @@ git clone https://github.com/Emmanuel687/Web-Challenge.git
 cd backend
 
 Install dependencies: npm install
-
+   
 Start the development server: npm start
 
 The app should now be running on http://localhost:4000.
@@ -54,6 +54,16 @@ The app should now be running on http://127.0.0.1:5173/
 ![ScreenShot Tool -20240616015719](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/26f99279-8e0e-4614-9b24-a278f3888cac)
 
 ![ScreenShot Tool -20240616015827](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/b087a60c-9a2e-4dfe-b80b-fea4bc592767)
+
+![ScreenShot Tool -2](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/35fd95f2-1af4-444d-b8fb-8d2a647bf94a)
+
+![ScreenShot Tool 1](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/7adb2a47-a9ba-4655-81a5-e2b2ca07b000)
+
+
+
+
+
+
 
 
 # Usage
