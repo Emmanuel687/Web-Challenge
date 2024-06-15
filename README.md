@@ -51,9 +51,10 @@ Start the development server: npm run dev
 The app should now be running on http://127.0.0.1:5173/
 
 # Screenshots
+![ScreenShot Tool -20240616015719](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/26f99279-8e0e-4614-9b24-a278f3888cac)
+
 ![ScreenShot Tool -20240616015827](https://github.com/Emmanuel687/Web-Challenge/assets/93251478/b087a60c-9a2e-4dfe-b80b-fea4bc592767)
 
-![Uploading ScreenShot Tool -20240616015719.png…]()
 
 # Usage
 
