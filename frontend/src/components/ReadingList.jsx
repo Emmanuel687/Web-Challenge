@@ -79,7 +79,7 @@ const ReadingList = ({ readingList, removeFromReadingList, handleToggle }) => {
 				<Typography
 					variant="body1"
 					align="center"
-					sx={{ padding: "270px", fontFamily: "Mulish" }}
+					sx={{ fontFamily: "Mulish" }}
 					className="no-books-added"
 				>
 					No Books Added 😞
