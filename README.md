@@ -1,5 +1,6 @@
 # Book Search and Reading List App
 
+
 This project is a web application for searching books and managing a reading list. It utilizes React for the frontend, Apollo Client for managing GraphQL queries, and Material-UI for UI components.
 
 # Features
